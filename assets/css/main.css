@@ -1,7 +1,7 @@
 /* Fonts */
 :root {
   --default-font: "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Roboto",  sans-serif;
+  --heading-font: "Elsie", serif;
   --nav-font: "Poppins",  sans-serif;
 }
 
@@ -417,7 +417,7 @@ h6 {
 
 .footer .footer-about p {
   font-size: 14px;
-  font-family: var(--heading-font);
+  font-family: "Times New Roman", serif;
 }
 
 .footer .social-links a {
@@ -435,8 +435,8 @@ h6 {
 }
 
 .footer .social-links a:hover {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  color: var(--default-color);
+  border-color: var(--default-color);
 }
 
 .footer h4 {
@@ -479,7 +479,7 @@ h6 {
 }
 
 .footer .footer-links ul a:hover {
-  color: var(--accent-color);
+  color: var(--default-color);
 }
 
 .footer .footer-contact p {
@@ -499,6 +499,11 @@ h6 {
 .footer .credits {
   margin-top: 8px;
   font-size: 13px;
+}
+
+.footer .credits a {
+  color:var(--nav-color);
+  text-decoration: underline;
 }
 
 /*--------------------------------------------------------------
@@ -555,7 +560,7 @@ h6 {
 
 .scroll-top i {
   font-size: 24px;
-  color: var(--default-color);
+  color: var(--contrast-color);
   line-height: 0;
 }
 
@@ -883,9 +888,11 @@ section,
 }
 
 .get-started .php-email-form {
-  background: color-mix(in srgb, var(--default-color), transparent 97%);
+  background: var(--contrast-color);
   padding: 30px;
   height: 100%;
+  box-shadow: 0 4px 8px var(--accent-color), 0 1px 4px var(--accent-color);
+  border-radius: 12px;
 }
 
 @media (max-width: 575px) {
@@ -895,7 +902,7 @@ section,
 }
 
 .get-started .php-email-form h3 {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -954,7 +961,7 @@ section,
   box-shadow: none;
   border-radius: 0;
   color: var(--default-color);
-  background-color: color-mix(in srgb, var(--background-color), transparent 20%);
+  background-color: var(--contrast-color);
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
@@ -1603,6 +1610,7 @@ section,
   font-size: 2.75rem;
   font-weight: 700;
   margin: 30px 0;
+  font-style: italic;
 }
 
 @media (min-width: 991px) {
